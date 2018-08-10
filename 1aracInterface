@@ -1,0 +1,7 @@
+package arac;
+
+public interface AracInterface {
+	
+	public void drive();
+
+}
