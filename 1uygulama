@@ -2,6 +2,7 @@ package uygulama;
 
 import arac.Araba;
 import arac.Arac;
+import arac.AracInterface;
 import arac.Bisiklet;  
 
 public class Application {
@@ -13,11 +14,13 @@ public class Application {
 		//Araba araba1=new Araba();
 		//araba1.drive();
 		
-		Arac arac1=new Araba();  //polimorphizmi kullanmak için araba referansını veri tipinin Arac olması gerekiyor..
-		arac1.drive();  //arac Araba sınıfındaki drive() metodunu çalıştırır
+		//Arac arac1=new Araba();  //polimorphizmi kullanmak için araba referansını veri tipinin Arac olması gerekiyor..
+		//arac1.drive();  //arac Araba sınıfındaki drive() metodunu çalıştırır
 		
-		arac1 = new Bisiklet(); //üretilen aracı bisiklete çevirdik
-		arac1.drive();  // artık bisiklet sınıfındaki drive() metodu çalışır
+		//arac1 = new Bisiklet(); //üretilen aracı bisiklete çevirdik
+		//arac1.drive();  // artık bisiklet sınıfındaki drive() metodu çalışır
+		AracInterface arac1=new Bisiklet(); //Arac arac1=new Bisiklet();  -> aynısı
+		arac1.drive();
 	}
 
 }
