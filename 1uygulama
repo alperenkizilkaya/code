@@ -22,5 +22,5 @@ public class Application {
 		AracInterface arac1=new Bisiklet(); //Arac arac1=new Bisiklet();  -> aynısı
 		arac1.drive();
 	}
-
+ 
 }
