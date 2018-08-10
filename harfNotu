@@ -1,0 +1,20 @@
+public class Deneme {
+	// basit harf notu kodu
+	
+	
+	public static void main(String[] args) {
+		System.out.println("lütfen sayısal not değerini girin");
+		Scanner s= new Scanner(System.in);
+		int not= s.nextInt();
+		if(not >=90)
+			System.out.println("harf notunuz AA");
+		else if(not >=80 )
+			System.out.println("harf notunuz BB");
+		else if(not>=70 )
+			System.out.println("harf notunuz CC");
+		else 
+			System.out.println("harf notunuz FF");
+		
+	}
+
+}
