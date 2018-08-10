@@ -1,0 +1,13 @@
+import java.util.Arrays;
+
+public class Odev1 {
+
+	
+	static int f(int x) {
+		
+		if (x==83) 	return  83;
+		return x+ f(x+2);
+	}
+	public static void main(String[] args) {
+		System.out.println(f(71));
+		//70ten 83e kadar olan tek sayılar toplamı yazdır
