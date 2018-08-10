@@ -1,0 +1,41 @@
+package arac;
+
+public class Araba extends Arac {
+	
+	private String renk;
+	
+	public Araba() {
+		super();
+	}
+	
+	public String getRenk() {
+		return renk;
+	}
+	public void setRenk(String renk) {
+		this.renk=renk;
+	}
+
+	@Override
+	public void drive() {
+		
+		depoyuDoldur();
+		motoruCalistir();
+		vitesAt(1);
+		vitesAt(2);
+		vitesAt(3);
+		vitesAt(4);
+	}
+	
+	private void depoyuDoldur() {		
+		System.out.println("depo dolduruluyor..");
+	}
+	
+	private void motoruCalistir() {
+		System.out.println("motor calistiriliyor...");
+	}
+	
+	private void vitesAt(int i) {
+		System.out.println(i+". vitese atılıyor..");
+	}	
+
+}
