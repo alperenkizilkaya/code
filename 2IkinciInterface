@@ -1,0 +1,6 @@
+package interfacesiniflar;
+
+public interface IkinciInterface {
+
+	public void ikinci();
+}
