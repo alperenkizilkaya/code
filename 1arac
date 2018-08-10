@@ -1,12 +1,10 @@
 package arac;
 
-public abstract class Arac {
+public abstract class Arac implements AracInterface {
 	
 	protected String marka;
 	protected String model;
 	protected int uretimYili;
-	
-	public abstract void drive();   
 	
 	public Arac() {		
 	}
