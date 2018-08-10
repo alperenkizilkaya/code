@@ -1,0 +1,21 @@
+package arac;
+
+public class Bisiklet extends Arac {
+
+	@Override
+	public void drive() {
+		bisiketeBin();
+		pedaliCevir();		
+	}
+	
+	private void bisiketeBin() {
+		System.out.println("bisiklete biniliyor..");
+	}
+
+	private void pedaliCevir() {
+		System.out.println("Pedal çeviliyor..");
+	}
+
+
+
+}
