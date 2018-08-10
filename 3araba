@@ -1,0 +1,60 @@
+package arac;
+
+public class Araba extends Arac {
+	
+	private String renk;
+	private Motor motor;  //motor sınıfındaki nesneyi araba sınıfında kullanmak için motor isimli değişken oluşturduk
+	
+	public class Motor{
+		int beygirgucu;
+		
+		public int getBeygirgucu() {
+			System.out.println("arabanın rengi "+ renk);
+			return beygirgucu;
+		}
+		public void setBeygirgucu(int beygirgucu) {
+			this.beygirgucu=beygirgucu;
+		}
+	}
+	
+	public Araba() {
+		super();
+		motor=new Motor();
+		motor.beygirgucu=120;
+	}
+	
+	public String getRenk() {
+		return renk;
+	}
+	public void setRenk(String renk) {
+		this.renk=renk;
+	}
+
+	@Override
+	public void drive() {
+		
+		depoyuDoldur();
+		motoruCalistir();
+		vitesAt(1);
+		vitesAt(2);
+		vitesAt(3);
+		vitesAt(4);
+	}
+	
+	private void depoyuDoldur() {		
+		System.out.println("depo dolduruluyor..");
+	}
+	
+	private void motoruCalistir() {
+		System.out.println("motor calistiriliyor...");
+	}
+	
+	private void vitesAt(int i) {
+		System.out.println(i+". vitese atılıyor..");
+	}	
+	
+	public Motor getMotor() {                            
+		return motor;
+	}
+
+}
