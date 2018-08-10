@@ -36,6 +36,6 @@ public abstract class Arac implements AracInterface {
 
 	public void setUretimYili(int uretimYili) {
 		this.uretimYili = uretimYili;
-	}
+	} 
 
 }
