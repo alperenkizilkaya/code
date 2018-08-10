@@ -1,0 +1,25 @@
+package interfacesiniflar;
+
+public class Uygulama implements BirinciInterface, IkinciInterface{
+
+	@Override
+	public void ikinci() {
+		System.out.println("ikinci metod");
+		
+	}
+
+	@Override
+	public void birinci() {
+		System.out.println("birinci metod");
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		//Uygulama u1= new Uygulama();
+		IkinciInterface u1= new Uygulama();
+		((BirinciInterface)u1).birinci();  //veritipi dönüşümü
+		u1.ikinci();
+	}
+   
+}
